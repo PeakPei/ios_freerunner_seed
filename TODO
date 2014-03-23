@@ -1,0 +1,17 @@
+TODO
+---
+
+ - create a new git repo called ios_freerunner_seed
+ - copy that git repo to iosgame2 and start tracking my game development using git [make a dev branch]
+ - make sure we are using the flat level generator, but make sure there are no gaps in the level, and turn on gravity.a make sure character square is falling and gets stopped by level. Remove dynamic from level squares.
+ - update controls, tap for jump, remove old controls.
+ - add free running to MyScene, so the character is always moving forward.
+ - Make a randomly generating level that creates large rectangles as a base, then adds some polygons to jump on to.
+ - the camera controls need to be able to follow a path. From point to point in a tree structure. Nodes branches can have conditions. For now the only possible condition is a bounding box that the player must be in.
+ 	- for the flat level the path will be an array in a straight line forward, every iteration we'll see if we should add another location to the array, so it can go on forever.
+ - add swiping controls to create slash objects, which are red rectangles in the direction of the swipe [4 directions], except down swipe is slide, which lowers profile for a short duration. also if up slashing while in the air, do an uppercut that gets you a little higher, also down swipe does a downward slash. left and right are the same.
+ - add random blue circles as enemies that go away when hit by a slash, but show a console message if they hit the player.
+	- count the number of blue circles destroyed [just in console for now]
+ - add black circles that the player will dash towards and stick to until the camera has caught up. Meanwhile the camera should accelerate in it's path, perhaps at 2x speed or faster if needed.
+
+Is the game fun? Does it have potential?
